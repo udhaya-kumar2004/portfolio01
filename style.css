@@ -1603,6 +1603,8 @@ html {
         align-items: center;
         gap: 10px;
         padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav ul li {
@@ -1627,22 +1629,25 @@ html {
     }
 
     .info p {
-        font-size: 0.9em;
-        line-height: 1.4;
+        font-size: 1em; /* Improved readability */
+        line-height: 1.5;
+        margin: 10px 0;
     }
 
     .info a.hireme,
     .info a.project {
         display: inline-block;
         margin: 10px 5px;
-        font-size: 0.9em;
-        padding: 10px 15px;
+        font-size: 1em; /* Increased for better tap targets */
+        padding: 12px 20px; /* Adjusted padding for touch devices */
+        text-decoration: none;
+        border-radius: 5px;
     }
 
     .info .image img {
-        max-width: 100%;
+        max-width: 90%; /* Added margin for better alignment */
         height: auto;
-        margin-top: 15px;
+        margin: 15px auto;
     }
 
     /* Adjust social media section */
@@ -1650,12 +1655,19 @@ html {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 20px; /* Larger spacing for clarity */
         margin: 20px 0;
     }
 
     .socialmedia a.social {
         font-size: 1.5em;
+        color: #333; /* Ensure visibility */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .socialmedia a.social:hover {
+        color: #007bff; /* Add hover effect for mobile devices */
     }
 }
 
@@ -1672,17 +1684,18 @@ html {
     }
 
     .info p {
-        font-size: 0.8em;
+        font-size: 0.9em; /* Slightly larger for readability */
     }
 
     .info a.hireme,
     .info a.project {
-        font-size: 0.8em;
-        padding: 8px 10px;
+        font-size: 0.9em;
+        padding: 10px 15px;
     }
 
     .socialmedia a.social {
-        font-size: 1.2em;
+        font-size: 1.3em; /* Ensure icons remain legible */
     }
 }
+
 
